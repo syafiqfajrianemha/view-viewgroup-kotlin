@@ -27,3 +27,25 @@ Hal ini akan memberikan performa dan proses rendering yang lebih baik daripada p
   pilih gambar pada Path, lalu klik Next → Finish sehingga, icon akan tersimpan di folder mipmap dengan berbagai density (mdpi, hdpi, xhdpi, xxhdpi, dan xxxhdpi).
   - **Layout Inspector** digunakan untuk menganalisis hierarki dan properties pada suatu tampilan. 
   - Penggunaan **Start** dan **End** pada margin daripada Right dan Left berfungsi supaya mendukung dua jenis bahasa, baik Left to Right (LTR) seperti bahasa Inggris maupun Right to Left (RTL) seperti bahasa Arab.
+![alt text](https://github.com/syafiqfajrianemha/view-viewgroup-kotlin/blob/main/ui-view-viewgroup.png?raw=true)
+
+## Rangkuman Style dan Theme
+- **Style** merupakan sebuah kumpulan properti yang dibutuhkan untuk mendefinisikan bagaimana sebuah komponen View ataupun ViewGroup ditampilkan. 
+- Pemusatan style cocok digunakan untuk mengumpulkan atribute yang berulang-ulang digunakan di banyak komponen sehingga jika ada perubahan, cukup ubah di satu tempat saja.
+- **Style** terdefinisi dalam file xml sendiri. Anda bisa menemukannya di **res** → **values** → **themes.xml**. 
+- Semua style yang dibuat harus berada dalam tag resources. Setiap style dibuat menggunakan tag style dan tag item untuk mendefinisikan property-nya.
+- Untuk memanggil style pada XML, gunakan property style = “@style/NamaStyle”.
+- **Theme** merupakan sebuah style yang diterapkan khusus untuk Activity dan Application pada berkas AndroidManifest.xml.
+- **Dark Theme** dapat mengurangi konsumsi energi pada handphone dan membuat aplikasi lebih mudah dibaca walaupun cahaya sedikit.
+- **Material Design** merupakan panduan desain yang dibuat oleh Google untuk membuat user interface dan user experience pada Android.
+- Untuk membuat theme, gunakan tag style dengan parent berupa Theme, seperti “Theme.MaterialComponents.DayNight.DarkActionBar” yang merupakan tema dengan background putih dan action bar berwarna gelap.
+- Beberapa atribut yang dapat dikustomisasi di dalamnya yaitu:
+    ![alt text](https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:1c820bea6c084d80f1b5da7ce0114ed620221223161244.jpeg?raw=true)
+  - **colorPrimary**: warna utama aplikasi yang tampil pada Action Bar dan komponen Button.
+  - **colorPrimaryVariant**: variasi dari warna utama yang biasanya digunakan pada Status Bar.
+  - **colorOnPrimary**: warna yang digunakan ketika ada text/icon di atas warna primary.
+  - **colorSecondary**: warna utama sekunder yang tampil pada Action Bar dan komponen EditText.
+  - **colorSecondaryVariant**: variasi dari warna sekunder.
+  - **colorOnSecondary**: warna yang digunakan ketika ada teks/icon di atas warna sekunder.
+  - **android:statusBarColor**: warna yang digunakan untuk status bar.
+- Semua variabel warna sebaiknya dimasukkan di dalam berkas **colors.xml**.
